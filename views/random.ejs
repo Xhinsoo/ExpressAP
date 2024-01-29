@@ -1,0 +1,12 @@
+<%- include('partials/head') %>
+    <%- include('partials/nav') %>
+    <!-- interpolating data. We wanna move the logic out of template -->
+    <h1>Your random number is: <%= num %></h1>
+    <%if(num%2 === 0 ){ %> 
+    <h2>Even number: Js logic isnt rendered its only used to control flow of content</h2>
+    <% } else { %>
+    <h2>That is odd number</h2>
+    <%}%>
+    <h3>That number is: <%= num%2 === 0 ? 'even':'odd' %></h3>
+
+<%- include('partials/footer') %>
